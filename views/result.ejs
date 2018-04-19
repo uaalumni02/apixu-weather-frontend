@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title> <%= response.name %> Weather Report</title>
+</head>
+<body>
+    <p>Date and Local Time: &nbsp <%= response.location.localtime %> </p>
+    <p>Current Temperature: &nbsp <%= response.current.temp_f %> </p>
+    <p>Current Visibility: &nbsp <%= response.current.condition.text %> </p>
+    </body>
+    </html>
